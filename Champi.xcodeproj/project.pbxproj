@@ -7,11 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50BAEE182541CC27005026F6 /* Champi.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BAEE162541CC27005026F6 /* Champi.h */; };
-		50BAEE192541CC27005026F6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50BAEE172541CC27005026F6 /* Info.plist */; };
+		505B7E7E25431D020077647A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B7E7D25431D020077647A /* UIKit.framework */; };
+		505B7E8025431D080077647A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B7E7F25431D080077647A /* Foundation.framework */; };
+		505B7E8325431D990077647A /* Champi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B7E8225431D990077647A /* Champi.swift */; };
+		505B7E8725431E670077647A /* VMBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B7E8625431E670077647A /* VMBannerView.swift */; };
+		505B7E8A25431E830077647A /* VMBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B7E8925431E830077647A /* VMBannerCollectionViewCell.swift */; };
+		505B7F10254477D40077647A /* VMBannerCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B7F0F254477D40077647A /* VMBannerCollectionViewLayout.swift */; };
+		505B7F13254477F00077647A /* VMBannerCollectionViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B7F12254477F00077647A /* VMBannerCollectionViewLayoutAttributes.swift */; };
+		505B7F16254479C20077647A /* VMBannerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B7F15254479C20077647A /* VMBannerCollectionView.swift */; };
+		50BAEE182541CC27005026F6 /* Champi.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BAEE162541CC27005026F6 /* Champi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		505B7E7D25431D020077647A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		505B7E7F25431D080077647A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		505B7E8225431D990077647A /* Champi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champi.swift; sourceTree = "<group>"; };
+		505B7E8625431E670077647A /* VMBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMBannerView.swift; sourceTree = "<group>"; };
+		505B7E8925431E830077647A /* VMBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		505B7F0F254477D40077647A /* VMBannerCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMBannerCollectionViewLayout.swift; sourceTree = "<group>"; };
+		505B7F12254477F00077647A /* VMBannerCollectionViewLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMBannerCollectionViewLayoutAttributes.swift; sourceTree = "<group>"; };
+		505B7F15254479C20077647A /* VMBannerCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMBannerCollectionView.swift; sourceTree = "<group>"; };
 		50BAEE092541CBE8005026F6 /* Champi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Champi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BAEE162541CC27005026F6 /* Champi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Champi.h; sourceTree = "<group>"; };
 		50BAEE172541CC27005026F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -22,17 +37,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505B7E7E25431D020077647A /* UIKit.framework in Frameworks */,
+				505B7E8025431D080077647A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		505B7E7825431CC40077647A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				505B7E8225431D990077647A /* Champi.swift */,
+				505B7E8625431E670077647A /* VMBannerView.swift */,
+				505B7F15254479C20077647A /* VMBannerCollectionView.swift */,
+				505B7E8925431E830077647A /* VMBannerCollectionViewCell.swift */,
+				505B7F0F254477D40077647A /* VMBannerCollectionViewLayout.swift */,
+				505B7F12254477F00077647A /* VMBannerCollectionViewLayoutAttributes.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		505B7E7C25431D020077647A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				505B7E7F25431D080077647A /* Foundation.framework */,
+				505B7E7D25431D020077647A /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50BAEDFF2541CBE8005026F6 = {
 			isa = PBXGroup;
 			children = (
 				50BAEE152541CC27005026F6 /* Sources */,
 				50BAEE0A2541CBE8005026F6 /* Products */,
+				505B7E7C25431D020077647A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +87,7 @@
 		50BAEE152541CC27005026F6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				505B7E7825431CC40077647A /* Core */,
 				50BAEE162541CC27005026F6 /* Champi.h */,
 				50BAEE172541CC27005026F6 /* Info.plist */,
 			);
@@ -95,6 +136,7 @@
 				TargetAttributes = {
 					50BAEE082541CBE8005026F6 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1210;
 					};
 				};
 			};
@@ -121,7 +163,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50BAEE192541CC27005026F6 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505B7F13254477F00077647A /* VMBannerCollectionViewLayoutAttributes.swift in Sources */,
+				505B7E8A25431E830077647A /* VMBannerCollectionViewCell.swift in Sources */,
+				505B7F10254477D40077647A /* VMBannerCollectionViewLayout.swift in Sources */,
+				505B7E8325431D990077647A /* Champi.swift in Sources */,
+				505B7E8725431E670077647A /* VMBannerView.swift in Sources */,
+				505B7F16254479C20077647A /* VMBannerCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +311,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -281,6 +329,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -290,12 +339,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
