@@ -5,6 +5,8 @@
 //  Created by max on 2020/10/24.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 class VMBannerCollectionViewLayout: UICollectionViewLayout {
@@ -29,7 +31,7 @@ class VMBannerCollectionViewLayout: UICollectionViewLayout {
   private var bannerView: VMBannerView? {
     return self.collectionView?.superview?.superview as? VMBannerView
   }
-
+  
   override init() {
     super.init()
     self.addObserver()
@@ -76,6 +78,19 @@ class VMBannerCollectionViewLayout: UICollectionViewLayout {
     return attributes
   }
   
+  internal func forceInvalidate() {
+    self.needsReprepare = true
+    self.invalidateLayout()
+  }
+  
+  internal func contentOffset(for indexPath: IndexPath) -> CGPoint {
+    return .zero
+  }
+  
+  internal func frame(for indexPath: IndexPath) -> CGRect {
+    return .zero
+  }
+  
   private func addObserver() {
     NotificationCenter.default.addObserver(self, selector: #selector(orientationDidChange(_:)), name: UIDevice.orientationDidChangeNotification, object: nil)
   }
@@ -84,11 +99,9 @@ class VMBannerCollectionViewLayout: UICollectionViewLayout {
     NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
   }
   
-  private func frame(for indexPath: IndexPath) -> CGRect {
-    return .zero
-  }
-  
   @objc private func orientationDidChange(_ notification: Notification) {
     
   }
 }
+
+#endif
