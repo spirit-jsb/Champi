@@ -5,6 +5,8 @@
 //  Created by max on 2020/10/24.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 public class VMBannerCollectionViewLayoutAttributes: UICollectionViewLayoutAttributes {
@@ -30,3 +32,5 @@ public class VMBannerCollectionViewLayoutAttributes: UICollectionViewLayoutAttri
     return copy
   }
 }
+
+#endif
