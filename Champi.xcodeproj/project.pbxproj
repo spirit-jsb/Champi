@@ -15,6 +15,7 @@
 		505B7F10254477D40077647A /* VMBannerCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B7F0F254477D40077647A /* VMBannerCollectionViewLayout.swift */; };
 		505B7F13254477F00077647A /* VMBannerCollectionViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B7F12254477F00077647A /* VMBannerCollectionViewLayoutAttributes.swift */; };
 		505B7F16254479C20077647A /* VMBannerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505B7F15254479C20077647A /* VMBannerCollectionView.swift */; };
+		5063492525866FA600C715B2 /* VMBannerViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5063492425866FA600C715B2 /* VMBannerViewTransformer.swift */; };
 		50BAEE182541CC27005026F6 /* Champi.h in Headers */ = {isa = PBXBuildFile; fileRef = 50BAEE162541CC27005026F6 /* Champi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		505B7F0F254477D40077647A /* VMBannerCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMBannerCollectionViewLayout.swift; sourceTree = "<group>"; };
 		505B7F12254477F00077647A /* VMBannerCollectionViewLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMBannerCollectionViewLayoutAttributes.swift; sourceTree = "<group>"; };
 		505B7F15254479C20077647A /* VMBannerCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMBannerCollectionView.swift; sourceTree = "<group>"; };
+		5063492425866FA600C715B2 /* VMBannerViewTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMBannerViewTransformer.swift; sourceTree = "<group>"; };
 		50BAEE092541CBE8005026F6 /* Champi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Champi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BAEE162541CC27005026F6 /* Champi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Champi.h; sourceTree = "<group>"; };
 		50BAEE172541CC27005026F6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 				505B7E8925431E830077647A /* VMBannerCollectionViewCell.swift */,
 				505B7F0F254477D40077647A /* VMBannerCollectionViewLayout.swift */,
 				505B7F12254477F00077647A /* VMBannerCollectionViewLayoutAttributes.swift */,
+				5063492425866FA600C715B2 /* VMBannerViewTransformer.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5063492525866FA600C715B2 /* VMBannerViewTransformer.swift in Sources */,
 				505B7F13254477F00077647A /* VMBannerCollectionViewLayoutAttributes.swift in Sources */,
 				505B7E8A25431E830077647A /* VMBannerCollectionViewCell.swift in Sources */,
 				505B7F10254477D40077647A /* VMBannerCollectionViewLayout.swift in Sources */,
