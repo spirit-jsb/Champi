@@ -5,10 +5,12 @@
 //  Created by max on 2020/10/24.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 
 class VMBannerCollectionView: UICollectionView {
-
+  
   override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
     super.init(frame: frame, collectionViewLayout: layout)
     self.initialize()
@@ -16,7 +18,8 @@ class VMBannerCollectionView: UICollectionView {
   }
   
   required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
+    super.init(coder: coder)
+    self.initialize()
   }
   
   override var scrollsToTop: Bool {
@@ -57,3 +60,5 @@ class VMBannerCollectionView: UICollectionView {
     }
   }
 }
+
+#endif
