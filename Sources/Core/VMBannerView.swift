@@ -9,31 +9,26 @@
 
 import UIKit
 
-@IBDesignable
-public class VMBannerView: UIView {
+@IBDesignable public class VMBannerView: UIView {
   
   @IBOutlet public weak var dataSource: VMBannerViewDataSource?
   @IBOutlet public weak var delegate: VMBannerViewDelegate?
   
-  @IBInspectable
-  public var interitemSpacing: CGFloat = 0 {
+  @IBInspectable public var interitemSpacing: CGFloat = 0 {
     didSet {
       self.collectionViewLayout.forceInvalidate()
     }
   }
   
-  @IBInspectable
-  public var itemSize: CGSize = VMBannerView.automaticSize {
+  @IBInspectable public var itemSize: CGSize = VMBannerView.automaticSize {
     didSet {
       self.collectionViewLayout.forceInvalidate()
     }
   }
   
-  @IBInspectable
-  public var decelerationDistance: UInt = 1
+  @IBInspectable public var decelerationDistance: UInt = 1
   
-  @IBInspectable
-  public var backgroundView: UIView? {
+  @IBInspectable public var backgroundView: UIView? {
     didSet {
       if let backgroundView = self.backgroundView {
         if backgroundView.superview != nil {
@@ -45,8 +40,7 @@ public class VMBannerView: UIView {
     }
   }
   
-  @IBInspectable
-  public var bounces: Bool {
+  @IBInspectable public var bounces: Bool {
     get {
       return self.collectionView.bounces
     }
@@ -55,8 +49,7 @@ public class VMBannerView: UIView {
     }
   }
   
-  @IBInspectable
-  public var alwaysBounceVertical: Bool {
+  @IBInspectable public var alwaysBounceVertical: Bool {
     get {
       return self.collectionView.alwaysBounceVertical
     }
@@ -65,8 +58,7 @@ public class VMBannerView: UIView {
     }
   }
   
-  @IBInspectable
-  public var alwaysBounceHorizontal: Bool {
+  @IBInspectable public var alwaysBounceHorizontal: Bool {
     get {
       return self.collectionView.alwaysBounceHorizontal
     }
@@ -75,8 +67,7 @@ public class VMBannerView: UIView {
     }
   }
   
-  @IBInspectable
-  public var isScrollEnabled: Bool {
+  @IBInspectable public var isScrollEnabled: Bool {
     set {
       self.collectionView.isScrollEnabled = newValue
     }
@@ -85,8 +76,7 @@ public class VMBannerView: UIView {
     }
   }
   
-  @IBInspectable
-  public var automaticSlidingInterval: TimeInterval = .zero {
+  @IBInspectable public var automaticSlidingInterval: TimeInterval = .zero {
     didSet {
       self.cancelTimer()
       if self.automaticSlidingInterval > 0.0 {
@@ -95,15 +85,13 @@ public class VMBannerView: UIView {
     }
   }
   
-  @IBInspectable
-  public var removeInfiniteLoopForSingleItem: Bool = false {
+  @IBInspectable public var removeInfiniteLoopForSingleItem: Bool = false {
     didSet {
       self.reloadData()
     }
   }
   
-  @IBInspectable
-  public var isInfinite: Bool = false {
+  @IBInspectable public var isInfinite: Bool = false {
     didSet {
       self.collectionViewLayout.needsReprepare = true
       self.collectionView.reloadData()
